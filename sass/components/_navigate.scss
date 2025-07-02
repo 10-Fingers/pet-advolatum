@@ -1,0 +1,34 @@
+.navigate {
+	display: flex;
+	align-items: center;
+
+	margin-right: auto;
+}
+
+.navigate-list {
+	display: flex;
+	align-items: center;
+}
+
+.navigate-item {
+	&:not(:last-child) {
+		margin-right: 49px;
+	}
+}
+
+.navigate-link {
+	padding: 10px 0;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: currentColor;
+	text-decoration: none;
+
+	transition: color 250ms linear;
+
+	&:hover,
+	&:focus {
+		color: var(--acent-second-color);
+	}
+}

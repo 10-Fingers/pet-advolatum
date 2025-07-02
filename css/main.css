@@ -1,0 +1,111 @@
+:root {
+  --text-main-color: rgb(255, 255, 255);
+  --text-second-color: rgb(255, 255, 255);
+  --titel-main-color: rgb(255, 255, 255);
+  --titel-second-color: rgb(31, 37, 45);
+  --bg-main-color: rgb(12, 18, 24);
+  --bg-second-color: rgb(16, 23, 31);
+  --acent-main-color: rgb(130, 41, 164);
+  --acent-second-color: rgb(209, 193, 43);
+  --acent-third-color: rgb(109, 156, 92);
+  --acent-four-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 1270px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(180deg, rgb(14, 20, 28), rgb(10, 15, 20) 100%);
+  background-color: rgb(14, 20, 28);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.heder .container {
+  display: flex;
+  align-items: center;
+}
+
+.heder .logo {
+  margin-right: 57px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.icon-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navigate-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigate-item:not(:last-child) {
+  margin-right: 49px;
+}
+
+.navigate-link {
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: currentColor;
+  text-decoration: none;
+  transition: color 250ms linear;
+}
+.navigate-link:hover, .navigate-link:focus {
+  color: var(--acent-second-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  padding: 10px 0;
+}
+
+.social-icon {
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.social-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.social-link {
+	padding: 10px 0;
+}
+
+.social-icon {
+	width: 100px;
+	height: 100px;
+	fill: #fff;
+}
