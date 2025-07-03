@@ -4,16 +4,19 @@
 	align-items: center;
 }
 
-.social-item:not(:last-child) {
-	margin-right: 10px;
-}
-
 .social-link {
 	padding: 10px 0;
 }
 
 .social-icon {
-	width: 100px;
-	height: 100px;
 	fill: #fff;
+	stroke: #fff;
+
+	transition: fill 250ms linear, stroke 250ms linear;
+
+	.social-link:hover &,
+	.social-link:focus & {
+		fill: var(--acent-second-color);
+		stroke: var(--acent-second-color);
+	}
 }
