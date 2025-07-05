@@ -248,8 +248,8 @@ ul {
 }
 
 .seson {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .line-wrap {
@@ -265,4 +265,101 @@ ul {
 
 .gorizont-line:not(:last-child) {
   margin-right: 28px;
+}
+
+.current {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.current .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-titel {
+  position: relative;
+  align-self: end;
+  margin-bottom: 61px;
+  font-size: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.current-titel::after {
+  content: "Актуальное";
+  position: absolute;
+  bottom: -9px;
+  right: 0;
+  z-index: -1;
+  font-size: 160px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--titel-second-color);
+}
+
+.curent-list {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-basis: calc((100% - 75px) / 4);
+}
+
+.item-list {
+  margin-bottom: 60px;
+  width: 272px;
+  background-color: var(--bg-second-color);
+}
+
+.item-img {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.item-wrap {
+  padding: 0px 10px 8px 10px;
+}
+
+.item-titel {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.item-iner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itme-btn {
+  color: currentColor;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition: color 250ms linear;
+}
+
+.itme-btn:hover,
+.itme-btn:focus {
+  color: var(--acent-second-color);
+}
+
+.current-link {
+  align-self: end;
+  margin-right: 35px;
+  text-transform: uppercase;
+  color: currentColor;
+  transition: color 250ms linear;
+}
+
+.current-link:hover,
+.current-link:focus {
+  color: var(--acent-second-color);
 }/*# sourceMappingURL=main.css.map */
