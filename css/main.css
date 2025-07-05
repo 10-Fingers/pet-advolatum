@@ -1,24 +1,4 @@
 @charset "UTF-8";
-:root {
-  --text-main-color: rgb(255, 255, 255);
-  --text-second-color: rgb(255, 255, 255);
-  --titel-main-color: rgb(255, 255, 255);
-  --titel-second-color: rgb(31, 37, 45);
-  --bg-main-color: rgb(12, 18, 24);
-  --bg-second-color: rgb(16, 23, 31);
-  --acent-main-color: rgb(130, 41, 164);
-  --acent-second-color: rgb(209, 193, 43);
-  --acent-third-color: rgb(109, 156, 92);
-  --acent-four-color: rgb(255, 255, 255);
-}
-
-.container {
-  width: 1260px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   font-family: sans-serif;
   font-size: 20px;
@@ -46,21 +26,24 @@ ul {
   list-style: none;
 }
 
-.heder {
-  padding: 40px 0;
+:root {
+  --text-main-color: rgb(255, 255, 255);
+  --text-second-color: rgb(255, 255, 255);
+  --titel-main-color: rgb(255, 255, 255);
+  --titel-second-color: rgb(31, 37, 45);
+  --bg-main-color: rgb(12, 18, 24);
+  --bg-second-color: rgb(16, 23, 31);
+  --acent-main-color: rgb(130, 41, 164);
+  --acent-second-color: rgb(209, 193, 43);
+  --acent-third-color: rgb(109, 156, 92);
+  --acent-four-color: rgb(255, 255, 255);
 }
 
-.heder .container {
-  display: flex;
-  align-items: center;
-}
-
-.heder .logo {
-  margin-right: 57px;
-}
-
-.heder .social-item:not(:last-child) {
-  margin-right: 10px;
+.container {
+  width: 1260px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -114,6 +97,50 @@ ul {
   stroke: var(--acent-second-color);
 }
 
+.btn {
+  display: block;
+  min-width: 205px;
+  min-height: 53px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  border: 2px solid var(--acent-second-color);
+  border-radius: 50px;
+  color: var(--acent-second-color);
+  background-color: rgba(15, 21, 29, 0.2);
+  cursor: pointer;
+  transition: color 250ms linear, border-color 250ms linear;
+}
+
+.btn-icon {
+  margin-right: 28px;
+  fill: currentColor;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--acent-four-color);
+  border-color: var(--acent-four-color);
+}
+
+.heder {
+  padding: 40px 0;
+}
+
+.heder .container {
+  display: flex;
+  align-items: center;
+}
+
+.heder .logo {
+  margin-right: 57px;
+}
+
+.heder .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .hero {
   padding: 140px 0;
   text-align: center;
@@ -155,23 +182,6 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-btn {
-  display: block;
+.hero .btn {
   margin-left: auto;
-  min-width: 205px;
-  min-height: 53px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  border: 2px solid var(--acent-second-color);
-  border-radius: 50px;
-  color: var(--acent-second-color);
-  background-color: rgba(15, 21, 29, 0.2);
-  cursor: pointer;
-}
-
-.btn-icon {
-  margin-right: 28px;
-  fill: var(--acent-second-color);
 }/*# sourceMappingURL=main.css.map */

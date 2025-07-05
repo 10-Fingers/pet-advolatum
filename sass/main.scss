@@ -1,15 +1,16 @@
-// UTILS
-@import "./utils/variabls";
-@import "./utils/container";
-
 // BASE
 @import "./base/base";
 
-// LAYOUT
-@import "./layout/header";
+// UTILS
+@import "./utils/variabls";
+@import "./utils/container";
 
 // COMPONENTS
 @import "./components/logo";
 @import "./components/navigate";
 @import "./components/social-link";
-@import "./components/hero";
+@import "./components/btn";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/hero";

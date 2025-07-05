@@ -1,0 +1,33 @@
+.btn {
+	display: block;
+
+	min-width: 205px;
+	min-height: 53px;
+
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+
+	border: 2px solid var(--acent-second-color);
+	border-radius: 50px;
+
+	color: var(--acent-second-color);
+	background-color: rgba(15, 21, 29, 0.2);
+
+	cursor: pointer;
+
+	transition: color 250ms linear, border-color 250ms linear;
+}
+
+.btn-icon {
+	margin-right: 28px;
+
+	fill: currentColor;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--acent-four-color);
+	border-color: var(--acent-four-color);
+}
