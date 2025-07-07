@@ -364,6 +364,10 @@ ul {
   color: var(--acent-second-color);
 }
 
+.contact {
+  padding: 70px 0;
+}
+
 .contact-titel {
   position: relative;
   margin-bottom: 55px;
@@ -422,5 +426,35 @@ ul {
 }
 
 .contact .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer {
+  padding: 49px 0 10px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .logo {
+  margin-bottom: 16px;
+}
+
+.footer-make {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.footer .social-item:not(:last-child) {
   margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
