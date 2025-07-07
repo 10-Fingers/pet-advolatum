@@ -362,4 +362,65 @@ ul {
 .current-link:hover,
 .current-link:focus {
   color: var(--acent-second-color);
+}
+
+.contact-titel {
+  position: relative;
+  margin-bottom: 55px;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-titel::before {
+  content: "контакты";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--titel-second-color);
+}
+
+.contact-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.location-img {
+  display: block;
+  margin-right: 121px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: currentColor;
+  transition: color 250ms linear;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--acent-second-color);
+}
+
+.address-link:first-child {
+  margin-bottom: 25px;
+}
+
+.contact .social-item:not(:last-child) {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
