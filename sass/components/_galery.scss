@@ -1,0 +1,23 @@
+.katalog .iner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.katalog-galery {
+	// max-width: 875px;
+	margin-left: 57px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	row-gap: 22px;
+	column-gap: 29px;
+	// gap: 29px;
+}
+
+.katalog-galery .item-list {
+	margin: 0;
+	max-width: 272px;
+
+	flex-basis: calc((100% - 29px * 2) / 3);
+}

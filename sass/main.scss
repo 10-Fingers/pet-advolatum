@@ -4,12 +4,15 @@
 // UTILS
 @import "./utils/variabls";
 @import "./utils/container";
+@import "./utils/is-hiden";
 
 // COMPONENTS
 @import "./components/logo";
 @import "./components/navigate";
 @import "./components/social-link";
 @import "./components/btn";
+@import "./components/katalog-navigate";
+@import "./components/galery";
 
 // LAYOUT
 @import "./layout/header";

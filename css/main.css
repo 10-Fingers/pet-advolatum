@@ -46,6 +46,18 @@ ul {
   margin-right: auto;
 }
 
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* Важливо для тексту, щоб не розривався */
+}
+
 .logo {
   text-decoration: none;
 }
@@ -122,6 +134,84 @@ ul {
 .btn:focus {
   color: var(--acent-four-color);
   border-color: var(--acent-four-color);
+}
+
+.katalog-navigate .item:not(:last-child) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.katalog-navigate .btn {
+  min-width: 0px;
+  min-height: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: currentColor;
+  border: none;
+  transition: color 250ms linear;
+}
+.katalog-navigate .btn:hover, .katalog-navigate .btn:focus {
+  color: var(--acent-second-color);
+}
+
+.katalog-navigate .current {
+  padding: 0;
+  color: var(--acent-second-color);
+}
+
+.katalog-icons {
+  display: flex;
+  align-items: center;
+}
+
+.katalog-icons .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 50%;
+}
+.katalog-icons .item:not(:last-child) {
+  margin-right: 8px;
+}
+.katalog-icons .item:nth-child(1) {
+  background-color: var(--acent-four-color);
+}
+.katalog-icons .item:nth-child(2) {
+  background-color: var(--acent-main-color);
+}
+.katalog-icons .item:nth-child(3) {
+  background-color: var(--acent-third-color);
+}
+.katalog-icons .item:nth-child(4) {
+  background-color: var(--acent-second-color);
+}
+
+.katalog .iner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.katalog-galery {
+  margin-left: 57px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 22px;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+}
+
+.katalog-galery .item-list {
+  margin: 0;
+  max-width: 272px;
+  flex-basis: calc((100% - 58px) / 3);
 }
 
 .heder {
